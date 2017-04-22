@@ -2,7 +2,7 @@
 [format="csv"]
 |======================
 Rédacteur, K3rn€l P4n1k
-Date, samedi 22 avril 2017, 22:42:10 (UTC+0200)
+Date, samedi 22 avril 2017
 État, Rédigé
 |======================
 
