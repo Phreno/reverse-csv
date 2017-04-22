@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Développeur ....: K3rn€l_P4n1K
+# Nom ............: reverse-csv
+# Description ....: Renverse les colonnes d'un csv
+# Version ........: 1.0
+# Date ...........: samedi 22 avril 2017, 22:27:02 (UTC+0200)
+# Dépendances ....: awk
+
+# Fonctionnalité .: Utilise awk pour formatter un csv
+# Intention ......: Ordonner une décomposition de collatz de 1 vers n.
+# Remarque .......: N/A
+
+
+# ===========================
+# Copyright @year K3rn€l P4n1k
+# ===========================
+#
+# This file is part of reverse-csv.
+#
+# reverse-csv is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# reverse-csv is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with reverse-csv. If not, see <http://www.gnu.org/licenses/>.
+
+awk 'BEGIN{FS=",[ ]*"; OFS=","}
+    {
+        for (i=NF; i>0; i--) {
+            printf "%s", $i;
+            if (i>1) {
+                printf "%s", OFS;
+            }
+        }
+        printf "\n"
+    }'

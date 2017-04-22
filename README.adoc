@@ -1,0 +1,52 @@
+.Informations générales
+[format="csv"]
+|======================
+Rédacteur, K3rn€l P4n1k
+Date, samedi 22 avril 2017, 22:42:10 (UTC+0200)
+État, Rédigé
+|======================
+
+# Renversement de csv
+
+.Objectif du document
+Documente l'usage des scripts présent dans ce repository.
+
+.Description générale
+Les scripts présents ici ont pour but de permettre de renverser la disposition d'un fichier de données.
+
+.Intention
+Travailler avec les scripts de collatz.
+
+## Dépendences
+
+.Liste des dépendences
+[format="csv", options="header"]
+|====
+Description, Dépendences, Mannuel
+Format de fichier, awk, https://www.gnu.org/software/gawk/manual/gawk.html
+|====
+
+## Usage
+
+.Signature
+[source, bash]
+----
+reverse-csv <file.csv>
+----
+
+.Arguments
+[format="csv"]
+|====
+file.csv, obligatoire, Fichier csv à formatter
+|====
+
+.Exemple
+[source, bash]
+----
+reverse-csv 1,2,3,4
+# Résultat
+# 4,3,2,1
+----
+
+## Commentaires
+Le script `reverse-ssv` s'utilise de la même mannière.
